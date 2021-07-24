@@ -20,7 +20,7 @@ namespace DemoLibrary.Handlers
         }
         public Task<List<PersonModel>> Handle(GetPersonListQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(_data.GetPeople());
         }
     }
 }
